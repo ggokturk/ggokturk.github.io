@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gökhan Göktürk</title>
+    <style type="text/css">
+        /* Layout */
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+        }
+
+        .ico {
+            grid-column: span 1;
+            vertical-align: top;
+            border-left: 2px solid #cfcfcf;
+            position: relative;
+        }
+
+        .column {
+            /* margin: auto; */
+            vertical-align: top;
+            text-align: left;
+            /* border-left: 2px solid #cfcfcf; */
+            position: relative;
+        }
+
+        .ico img {
+            border-radius: 5px;
+            width: 100%;
+            max-width: 80px;
+            margin-left: 10px;
+        }
+
+        .desc {
+            grid-column: span 10;
+            vertical-align: top;
+            padding-left: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-dot {
+            position: absolute;
+            top: 0px;
+            left: -8px;
+            width: 10px;
+            height: 10px;
+            border-radius: 7px;
+            background-color: #cfcfcf;
+            border: 2px solid white;
+        }
+
+        .timespan {
+            grid-column: span 1;
+            text-align: right;
+            padding-right: 5px;
+            color: #bbb;
+            width: 2cm;
+        }
+
+        body {
+            margin: 40px auto;
+            max-width: 21cm;
+            line-height: 1.6;
+            font-size: 14px;
+            font-family: sans-serif;
+            color: #444;
+            padding: 0 10px
+        }
+        ul li{
+    display:inline-block;
+}
+
+        /* header {
+        position: sticky;
+        top: 0;
+        font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        background: #555;
+        color: #f1f1f1;
+    } */
+        h1,
+        h2,
+        h3 {
+            line-height: 1.2
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="row">
+            <!-- <div class="timespan">
+            </div> -->
+
+            <div class="column" style="grid-column: span 6;">
+                <h1> Gökhan Göktürk, PhD</h1>
+                HPC Researcher
+                <aside>
+                </aside>
+            </div>
+
+            <div class="column" style="grid-column: span 6" ;>
+                <a href="mailto:gokhan@gokturk.me"> gokhan@gokturk.me</a><br>
+                <a href="http://linkedin.com/in/gokhangokturk/"> in/gokhangokturk</a><br>
+                <a href="http://github.com/ggokturk"> github.com/ggokturk</a>
+            </div>
+        </div>
+
+
+    </header>
+    <h2> Skills </h2>
+    <ul>
+        <li>C++,</li>
+        <li>CUDA,</li>
+        <li>MPI,</li>
+        <li>OpenMP,</li>
+        <li>Perf/Vtune,</li>
+        <li>Python,</li>
+        <li>Rust</li>        
+    </ul>
+    <ul>
+        <li>High Performance Computing,</li>
+        <li>Distributed Computing,</li>
+        <li>Graph Algorithms,</li>
+        <li>Machine Learning,</li>
+        <li>Data Mining</li>
+    </ul>
+
+    <h2> Education</h2>
+    <div id="education" class="container">
+        <div class="entry row">
+            <div class="timespan">
+                2015 - 2021
+            </div>
+            <div class="ico">
+                <div class="entry-dot"></div>
+                <img src="https://www.sabanciuniv.edu/themes/custom/su/logo.svg" style="max-width: 2cm;">
+            </div>
+            <div class="desc">
+                PhD in Computer Science <a href="https://openai.com/">Sabanci University</a> with Kamer Kaya, focusing
+                on High Performance Computing and Graph Algorithms. <br>
+                Thesis: Ultra-Fast Influence Maximization with Fused Sampling and Sketches
+            </div>
+        </div>
+
+        <div class="entry row">
+            <div class="timespan">
+                2011 - 2014
+            </div>
+            <div class="ico">
+                <div class="entry-dot"></div>
+                <img src="https://www.sabanciuniv.edu/themes/custom/su/logo.svg" style="max-width: 2cm;">
+            </div>
+            <div class="desc">
+                MSc at Sabanci University where I worked with Yucel Saygin and Berrin Yanikoglu on Network Analysis and
+                Sentiment Analysis.
+            </div>
+
+        </div>
+
+        <div class="entry row">
+            <div class="timespan">
+                2006 - 2011
+            </div>
+            <div class="ico">
+                <div class="entry-dot"></div>
+                <img src="https://www.sabanciuniv.edu/themes/custom/su/logo.svg" style="max-width: 2cm;">
+            </div>
+            <div class="desc">
+                BSc in Computer Science @ Sabanci University.<br>
+                Thesis: Parallel Implementation of Gentry's Fully Homomorphic Encryption.
+            </div>
+        </div>
+    </div>
+    <h2> Work</h2>
+    <div id="history" class="container">
+
+        <div class="entry row">
+            <div class="timespan">
+                2024 -
+            </div>
+            <div class="ico">
+                <div class="ico">
+                    <div class="entry-dot"></div>
+                    <img src="https://www.sisecam.com.tr/tr/PublishingImages/news-room/logos/Sisecam_Logo.png"
+                        style="max-width: 2cm;">
+                </div>
+            </div>
+            <div class="desc">
+                HPC Consultant @ <a href="sisecam.com">Sisecam</a>.
+            </div>
+        </div>
+        <div class="entry row">
+            <div class="timespan">
+                2021-2023
+            </div>
+            <div class="ico">
+                <div class="entry-dot"></div>
+                <img src="https://www.sabanciuniv.edu/themes/custom/su/logo.svg" style="max-width: 2cm;">                
+            </div>
+            <div class="desc">
+                Post-doctoral Researcher @ Sabanci University
+            </div>
+        </div>
+        <div class="entry row">
+            <div class="timespan">
+                2016
+            </div>
+            <div class="ico">
+                <div class="entry-dot"></div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Akbank_logo.svg" style="max-width: 2cm;">                
+            </div>
+            <div class="desc">
+                Analytics Manager @ Akbank
+            </div>
+        </div>
+
+        <div class="entry row">
+            <div class="timespan">
+                2015 - 2016
+            </div>
+            <div class="ico">
+                <div class="entry-dot"></div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Akbank_logo.svg" style="max-width: 2cm;">
+                <img src="https://www.sbm.org.tr/assets/img/sbm-logo-tr-60h.png" style="max-width: 2cm;">
+                
+            </div>
+            <div class="desc">
+                PhD Student Researcher @ Behavioural Analytics and Visualization lab. <br>
+                Consulting at Akbank and Sigorta Bilgi Merkezi.
+            </div>
+        </div>
+
+        <!-- <div class="entry row">
+            <div class="timespan">
+                2010
+            </div>
+            <div class="ico">
+                <div class="entry-dot"></div>
+                <img src="https://pardus.org.tr/wp-content/uploads/2019/08/Pardus-04.png" style="max-width: 2cm;">
+            </div>
+            <div class="desc">
+                Intern @ Pardus Linux
+            </div>
+        </div> -->
+        <div class="entry row">
+            <div class="timespan">
+                2006 - 2011
+            </div>
+            <div class="ico">
+                <div class="entry-dot"></div>
+                <img src="https://www.sabanciuniv.edu/themes/custom/su/logo.svg" style="max-width: 2cm;">
+            </div>
+            <div class="desc">
+                BSc in Computer Science @ Sabanci University.<br>
+                Focus: Parallel Programming and Cryptography.<br>
+                Thesis: Parallel Implementation of Gentry's Fully Homomorphic Encryption.
+            </div>
+        </div>
+    </div>
+
+<div class="container">
+    <h2>Awards</h2>
+    <!-- <div class="row"> -->
+        <h3>Altın Baykuş</h3>
+        Awarded "Scholar Owl" for “Twitter and politics: identifying Turkish opinion leaders” project.
+    <!-- </div> -->
+</div>
+    <div class="container">
+        <h2>References</h2>
+        <div class="row">
+            <div class="column" style="grid-column: span 6;">
+                Prof. Kamer Kaya<br>
+                Sabancı University<br>
+                kamer.kaya@sabanciuniv.edu
+            </div>
+
+            <div class="column" style="grid-column: span 6;">
+                Deniz Akar<br>
+                Ernst & Young, Senior Manager<br>
+                deniz.akar@tr.ey.com
+            </div>
+        </div>
+    </div>
+    <div class="container" id="mypubs">
+        <h2>Publications</h2>
+        <div class="pub"></div>
+        <div><a
+                href="https://arxiv.org/search/?query=DiFuseR++a+distributed+sketch+based+influence+maximization+algorithm+for+GPUs&amp;searchtype=title">
+                DiFuseR: a distributed sketch-based influence maximization algorithm for GPUs </a></div>
+        <div class="journal">The Journal of Supercomputing 2024</div>
+        <div class="pub"></div>
+        <div><a
+                href="https://arxiv.org/search/?query=Fast+and+error+adaptive+influence+maximization+based+on+Count+Distinct+sketches&amp;searchtype=title">
+                Fast and error-adaptive influence maximization based on Count-Distinct sketches </a></div>
+        <div class="journal">Information Sciences 2024</div>
+        <div class="pub"></div>
+        <div><a
+                href="https://arxiv.org/search/?query=Fast+and+High+Quality+Influence+Maximization+on+Multiple+GPUs&amp;searchtype=title">
+                Fast and High-Quality Influence Maximization on Multiple GPUs </a></div>
+        <div class="journal">2022 IEEE International Parallel and Distributed Processing Symposium (IPDPS) 2022</div>
+        <div class="pub"></div>
+        <div><a
+                href="https://arxiv.org/search/?query=Boosting+Parallel+Influence+Maximization+Kernels+for+Undirected+Networks+With+Fusing+and+Vectorization&amp;searchtype=title">
+                Boosting Parallel Influence-Maximization Kernels for Undirected Networks With Fusing and Vectorization
+            </a>
+        </div>
+        <div class="journal">IEEE Transactions on Parallel and Distributed Systems 2021</div>
+        <div class="pub"></div>
+        <div><a
+                href="https://arxiv.org/search/?query=Twitter+and+Politics++Identifying+Turkish+Opinion+Leaders+in+New+Social+Media&amp;searchtype=title">
+                Twitter and Politics: Identifying Turkish Opinion Leaders in New Social Media </a></div>
+        <div class="journal">Turkish Studies 2014</div>
+    </div>
+
+    <script>
+        // (function(i, s, o, g, r, a, m) {
+        //     i['GoogleAnalyticsObject'] = r;
+        //     i[r] = i[r] || function() {
+        //         (i[r].q = i[r].q || []).push(arguments)
+        //     },
+        //     i[r].l = 1 * new Date();
+        //     a = s.createElement(o),
+        //     m = s.getElementsByTagName(o)[0];
+        //     a.async = 1;
+        //     a.src = g;
+        //     m.parentNode.insertBefore(a, m)
+        // })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        // ga('create', 'UA-46163202-2', 'auto');
+        // ga('send', 'pageview');
+    </script>
+</body>
+
+</html>
